@@ -1,0 +1,26 @@
+import random
+import string
+
+from Words import words
+
+def valid_word(words):
+    c_word=random.choice(words)
+    while '-' in c_word or ' ' in c_word:
+        c_word=random.choice(words)
+    return c_word
+
+def hangman():
+    c_word=valid_word(words)
+    letters_in_word=set(c_word)
+    alphabet=set(string.ascii_uppercase)
+    letters_used=set()
+
+    letters_used=input("Enter a guess: ").upper()
+    
+
+   
+   
+
+    
+valid_word(words)
+hangman()
