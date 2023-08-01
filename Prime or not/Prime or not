@@ -1,0 +1,17 @@
+def prime():
+	num=int(input("Enter number to be checked: ")) 
+
+	pos_nums=range(2,num) 
+	for i in pos_nums:
+		if (num%i)==0:
+			print(f"{num} is not a prime number")
+			break
+		elif num%i!=0 and num!=pos_nums:
+			print(f"{num} is prime")
+			break
+		else:
+			print("Neither prime nor composite")
+	if num < 2:
+		print(f"{num} is neither prime nor composite")
+    	
+prime()
